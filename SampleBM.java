@@ -57,8 +57,8 @@ public class SampleBM {
 
         t = new Tunnel();
         HashMap<String, String> options = new HashMap<String, String>();
-        options.put("user", "deepanshulambdatest");
-        options.put("key", "f8xr8eV7hpJJixO6sbVmPazAH4C8VoAUhEANPjikayLTXNlJKs");
+        options.put("user", "your_LT_username");
+        options.put("key", "your_LT_accesskey");
         options.put("proxyHost",hostIp);
         options.put("proxyPort", portn);
         options.put("ingress-only", "--ingress-only");          //mandatory while using BM proxy
@@ -86,7 +86,7 @@ public class SampleBM {
         capabilities.setCapability("tunnel",true);
         capabilities.setCapability("tunnelName",portn);
 
-        driver = new RemoteWebDriver(new URL("https://deepanshulambdatest:f8xr8eV7hpJJixO6sbVmPazAH4C8VoAUhEANPjikayLTXNlJKs@hub.lambdatest.com/wd/hub"),capabilities);
+        driver = new RemoteWebDriver(new URL("https://username:accesskey@hub.lambdatest.com/wd/hub"),capabilities);
     }
 
     @Test
